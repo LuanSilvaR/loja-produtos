@@ -17,7 +17,7 @@ jobs:
       - name: Setuo Python
         uses: action/setup-python@v5
         with:
-         python-verson: "3.11"
+          python-verson: "3.11"
       - name: verifica Sintaxe
         run: python -m compileall
     
