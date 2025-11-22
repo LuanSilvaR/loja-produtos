@@ -12,7 +12,7 @@ def main();
     if produto1.vender(2):
         print("Venda realizada com sucesso!")
     else
-        print("Estoque insuficiente.")
+        print("Estoque insuficiente.") 
 
 
     if __name__ == "__main__":
