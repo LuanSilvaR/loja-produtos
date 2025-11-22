@@ -1,0 +1,23 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: ["main", "feature/*"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-lastest
+
+    steps:
+      - name: Checkout do código
+        uses: action/checkout@v4
+
+      - name: Setuo Python
+        uses: action/setup-python@v5
+        with:
+         python-verson: "3.11"
+      - name: verifica Sintaxe
+        run: python -m compileall
+    
